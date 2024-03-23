@@ -44,10 +44,7 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="./favicon.ico" />
       </Head>
       <main>
-        {partyTime ? 
-          <AfterBirthDay /> : 
-          <BeforeBirthday days={days} hours={hours} minutes={minutes} seconds={seconds} />
-        }
+        <BeforeBirthday days={days} hours={hours} minutes={minutes} seconds={seconds} />
       </main>
     </>
   )
