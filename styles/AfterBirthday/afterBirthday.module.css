@@ -1,0 +1,27 @@
+.pattern__background {
+  background-image:url('../../assets/pattern/birthdayPattern.svg');
+}
+
+.box__shadow{
+  box-shadow: 0 0 20px #000;
+}
+
+.mid {
+  left: calc(75% / 2);
+  top: 25%;
+}
+
+.linear__gradient {
+  background: linear-gradient(0.25turn, #535d7c, #aaabd3);
+}
+
+.left__balloon {
+  left: 22%;
+  top: 15%;
+}
+
+.right__balloon {
+  right: 22%;
+  top: 15%;
+  transform: scaleX(-1);
+}
