@@ -13,8 +13,8 @@ export default function Home() {
 
   useEffect( () => {
     
-    const target = new Date("06/06/2024 23:59:59");
-    //const target = new Date("03/21/2024 17:11:30");
+    //const target = new Date("06/06/2024 23:59:59");
+    const target = new Date("03/26/2024 17:11:30");
     
     const interval = setInterval( () => {
       const now = new Date();
@@ -27,7 +27,7 @@ export default function Home() {
       const s = Math.floor((difference % (1000 * 60)) / 1000)
       setDays(d); setHours(h); setMinutes(m); setSeconds(s);
 
-      if (d <= 0 && h <= 0 && m <= 0 && s <= 0) {
+      if (target.getMonth() == now.getMonth() && target.getDay() == now.getDay()) {
         setPartyTime(true);
       }
     } , 1000);

@@ -1,5 +1,5 @@
 import React from 'react'
-//import Confetti from 'react-confetti-boom';
+import Confetti from 'react-confetti-boom';
 import styles from '@/styles/AfterBirthday/afterBirthday.module.css'
 import Image from 'next/image';
 import Balloon from '@/assets/images/balloon/balloon.svg'
@@ -17,7 +17,7 @@ const AfterBirthDay = () => {
         <Image src={BalloonMirror} alt="balloon" className={`absolute h-1/2 ${styles.left__balloon} z-10`} />
         <Image src={Balloon} alt="balloon" className={`absolute h-1/2 ${styles.right__balloon} z-10`}/>
       </div>
-      {/* <Confetti mode='fall' particleCount={100} colors={['#717FAF', '#9293BA']}/> */}
+      <Confetti mode='fall' particleCount={50} colors={['#717FAF', '#9293BA']}/> 
     </>
     
   )
