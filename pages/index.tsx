@@ -13,8 +13,9 @@ export default function Home() {
 
   useEffect( () => {
     
-    //const target = new Date("06/06/2024 23:59:59");
-    const target = new Date("03/26/2024 17:11:30");
+    const target = new Date("06/06/2024 23:59:59");
+    target.setFullYear(new Date().getFullYear());
+    //const target = new Date("03/26/2024 17:11:30");
     
     const interval = setInterval( () => {
       const now = new Date();

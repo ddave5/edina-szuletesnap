@@ -1,0 +1,46 @@
+.imgcomponent {
+  max-width: 100%;
+  border-radius: 8px;
+  transition: 500ms all ease;
+}
+
+.serviceImage {
+  max-width: 100%;
+  border-radius: 16px;
+  background-color:black;
+  filter:grayscale(100%);
+  transition: all .5s ease-in-out;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out;
+}
+
+.serviceImage:hover{
+  -webkit-filter: grayscale(0%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+  filter:grayscale(0%);
+  transform:scale(1.03);
+  transition: all .5s ease-in-out;
+}
+
+.blur__span {
+  position: relative;
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 14px);
+}
+
+.first__image {
+  margin-bottom: 2%;
+}

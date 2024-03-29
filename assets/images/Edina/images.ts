@@ -16,8 +16,10 @@ import image14 from '@/assets/images/Edina/14.jpg';
 import image15 from '@/assets/images/Edina/15.jpg';
 import image16 from '@/assets/images/Edina/16.jpg';
 import image17 from '@/assets/images/Edina/17.jpg';
+import image18 from '@/assets/images/Edina/18.jpg';
+//import image19 from '@/assets/images/Edina/19.jpg';
 
 export const images = [image0, image1, image2, image3, image4,
                        image5, image6, image7, image8, image9,
                        image10, image11, image12, image13, image14,
-                       image15, image16, image17]
+                       image15, image16, image17, image18, ]
