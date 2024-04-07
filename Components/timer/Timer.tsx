@@ -3,7 +3,7 @@ import style from '@/styles/Timer/Timer.module.css'
 
 const Timer = (param: {days: number , hours: number, minutes: number, seconds: number}) => {
   return (
-    <div className="flex justify-center flex-col mb-8">
+    <div className="flex justify-center flex-col mb-8 select-none">
       <h2 className='text-center mb-8 font-semibold text-sm sm:text-base md:text-lg lg:text-xl'>Hiszen már nem lesz csak a húsz éveseké a világ...</h2>
       <div className="flex justify-center mb-8">
         <div className="flex flex-col justify-center align-center bg-slate-50 mr-1 lg:w-[200px] lg:h-[200px] w-[75px] h-[75px] sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:mr-2">

@@ -1,27 +1,17 @@
 .pattern__background {
-  background-image:url('../../assets/pattern/birthdayPattern.svg');
+  background-color: #000;
 }
 
-.box__shadow{
-  box-shadow: 0 0 20px #000;
-}
-
-.mid {
-  left: calc(75% / 2);
-  top: 25%;
-}
-
-.linear__gradient {
-  background: linear-gradient(0.25turn, #535d7c, #aaabd3);
-}
-
-.left__balloon {
-  left: 22%;
-  top: 15%;
-}
-
-.right__balloon {
-  right: 22%;
-  top: 15%;
-  transform: scaleX(-1);
+.letter {
+  line-height: 0.7em;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  user-select: none;
+  box-shadow: none;
+  color: #fed7aa;
+    text-shadow: 0 0 10px #FFEDD5,
+    0 0 20px #FFEDD5,
+    0 0 40px #FFEDD5,
+    0 0 80px #FFEDD5,
+    0 0 160px #FFEDD5;
 }
