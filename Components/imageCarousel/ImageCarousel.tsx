@@ -12,9 +12,8 @@ const ImageCarousel = ({children: slides}: any) => {
   const [curr, setCurr] = useState(0);
   const prev = () => setCurr( (curr) => (slides != null && curr === 0 ? slides.length - 1 : curr - 1));
   const next = () => setCurr( (curr) => (slides != null && curr === slides.length - 1 ? 0 : curr + 1));
-  const moveToImage = (index: number) => setCurr(index);
   return (
-    <div className='flex flex-col align-center'>
+    <div className='flex flex-col justify-center items-center'>
       <div className='overflow-hidden relative w-5/6 md:w-4/5 lg:w-3/4 xl:w-1/2' >
         <div className='flex transition-transform ease-out duration-1000 select-none' 
         style={{transform: `translateX(-${curr * 100}%)`}}>{slides}</div>
