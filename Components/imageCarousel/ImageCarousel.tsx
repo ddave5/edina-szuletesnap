@@ -28,7 +28,7 @@ const ImageCarousel = ({children: slides}: any) => {
         </div>
       </div>
       <div className='flex justify-center mt-2 '>
-        <div className='text-center text-xl sm:text-2xl border-2 rounded border-solid w-1/4 bg-white w-fit p-1'>
+        <div className='text-center text-xl sm:text-2xl border-2 rounded border-solid bg-white w-fit p-1'>
           {1994+curr}
         </div>
       </div>
