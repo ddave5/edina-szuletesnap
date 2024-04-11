@@ -16,6 +16,7 @@ export default function Home() {
     /*const target = new Date("06/06/2024 23:59:59");
     target.setFullYear(new Date().getFullYear());*/
     const target = new Date("04/07/2024 13:53:00");
+    target.setFullYear(target.getDate() > new Date().getDate() ? new Date().getFullYear() : (new Date().getFullYear() + 1));
     
     const interval = setInterval( () => {
       const now = new Date();
