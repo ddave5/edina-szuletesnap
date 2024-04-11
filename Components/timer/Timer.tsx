@@ -2,6 +2,7 @@ import React from 'react'
 import style from '@/styles/Timer/Timer.module.css'
 
 const Timer = (param: {days: number , hours: number, minutes: number, seconds: number}) => {
+
   return (
     <div className="flex justify-center flex-col mb-8 select-none">
       <h2 className='text-center mb-8 font-semibold text-sm sm:text-base md:text-lg lg:text-xl'>Hiszen már nem lesz csak a húsz éveseké a világ...</h2>
@@ -23,7 +24,7 @@ const Timer = (param: {days: number , hours: number, minutes: number, seconds: n
           <span className={`${style.poppins} text-center text-[10px] sm:text-sm md:text-lg`}>Másodperc</span>
         </div>
       </div>
-      <h2 className='text-center font-semibold text-sm sm:text-base md:text-lg lg:text-xl'>Addig is egy kis ízelítő ebből a csodás 30 évből:</h2>
+      <h2 className='text-center font-semibold text-sm sm:text-base md:text-lg lg:text-xl'>Addig is egy kis ízelítő ebből a csodás {new Date().getFullYear() - 1994} évből:</h2>
     </div>
   )
 }
