@@ -2,7 +2,6 @@ import React, { useState, ReactNode, useEffect } from 'react'
 import { MdNavigateNext } from "react-icons/md";
 import { MdNavigateBefore } from "react-icons/md";
 import { MdFullscreen } from "react-icons/md";
-import styles from '@/styles/imageCarousel/ImageCarousel.module.css';
 import {images} from '@/assets/images/Edina/images';
 import { MdClose } from "react-icons/md";
 import Image from 'next/image';

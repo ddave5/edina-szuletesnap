@@ -8,13 +8,13 @@ const AfterBirthDay = () => {
   return (
     <>
       <div className={`flex justify-center items-center h-screen`}>
-        <div className='w-1/2 relative'>
-          <Image src={CardBackground} alt='background' className='h-[90vh] mt-4 mb-4'/>
-          <div className={`absolute bottom-1/4 w-full flex justify-center text-center ${styles.unique__font} text-7xl`}>
-            <p className='w-1/2'>Boldog születésnapot!</p>
+        <div className='relative flex justify-center h-full w-full'>
+          <Image src={CardBackground} alt='background' className='w-[90%] md:w-[80%] lg:w-[60%] xl:w-[50%] mt-4 mb-4'/>
+          <div className={`absolute bottom-1/4 w-full flex justify-center text-center ${styles.unique__font} text-6xl lg:text-7xl`}>
+            <p className='w-fit text-center'>Boldog születésnapot!</p>
           </div>
           <div className={`absolute bottom-10 w-full flex justify-center text-center ${styles.unique__font} text-2xl`}>
-            <p className='w-1/2'>Nem minden nap lesz az ember 30! </p>
+            <p className='w-fit text-center'>A legjobb testvérnek! </p>
           </div>
         </div>
       </div>
