@@ -15,8 +15,8 @@ export default function Home() {
     
     /*const target = new Date("06/06/2024 23:59:59");*/
     const target = new Date("04/13/2024 23:59:59");
-    //target.setFullYear(target.getDate() > new Date().getDate() ? new Date().getFullYear() : (new Date().getFullYear() + 1));
-    
+    target.setFullYear(target > new Date() ? new Date().getFullYear() : (new Date().getFullYear() + 1));
+  
     const interval = setInterval( () => {
       const now = new Date();
 
@@ -28,7 +28,7 @@ export default function Home() {
       const s = Math.floor((difference % (1000 * 60)) / 1000)
       setDays(d); setHours(h); setMinutes(m); setSeconds(s);
 
-      if (target.getMonth() == now.getMonth() && target.getDay() == now.getDay()) {
+      if (target.getMonth() == now.getMonth() && target.getDate() == now.getDate()) {
         setPartyTime(true);
       }
     } , 1000);
